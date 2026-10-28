@@ -1,6 +1,17 @@
 ---
 name: knap
-description: Use when generating Markdown or Obsidian notes from structured data (JSON, CSV, a folder of JSON files) with a template, or when the user mentions Knap, knap.md, Kepano's template language, "render notes from data", "one note per record", frontmatter from JSON, or Obsidian Web Clipper templates.
+description: "구조화 데이터(JSON·CSV·JSON 폴더)를 템플릿으로 Markdown·Obsidian 노트로 렌더할 때 쓴다 — 레코드당 노트 1개, JSON→frontmatter·wikilink·표. Trigger: knap, knap.md, Kepano 템플릿 언어, render notes from data, one note per record, Obsidian Web Clipper 템플릿. CLI 미설치면 `npm i -g knap`(Node 20+)이 먼저다 — 설치는 사용자 승인 사안."
+license: MIT
+metadata:
+  author: remigius-labs
+  version: 1.0.0
+  category: knowledge-routing
+  upstream: https://github.com/remigius-labs/knap-skill @ cdd6cc3abadefe534d37867f72919636a4b2228b
+  local_divergence: |
+    frontmatter description을 한국어 트리거로 교체하고 설치 승인 문구를 붙였다.
+    본문·filters.md 는 upstream verbatim. AUD-20260912-113143-fc55950b (install-candidate).
+    bookmark-pipeline·kci-citation-network 투사 스크립트를 knap 으로 바꾸는 것은
+    별도 검토·사용자 승인 뒤의 일이다(감사 manual_followups).
 ---
 
 # Knap CLI
